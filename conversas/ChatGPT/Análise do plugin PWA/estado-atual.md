@@ -53,3 +53,11 @@ Esta regra é de continuidade documental e não autoriza mudanças no código, n
 - Novas sessões ficam em `sessoes/AAAA-MM-DD-assunto-curto.md`, um arquivo por sessão, sem sobrescrever arquivos anteriores.
 - Na retomada, ler todos os arquivos de `sessoes/` em ordem cronológica, depois conferir `estado-atual.md` e validar o estado real do repositório.
 - Distinguir transcrição completa de resumo/checkpoint. Não apresentar resumo como se fosse a conversa integral.
+
+## Atualização documental — 2026-10-18
+
+- Foi definido e documentado o arquivamento de cada nova sessão em um arquivo separado dentro de `sessoes/`, com nome `AAAA-MM-DD-assunto-curto.md`.
+- Foi criado `sessoes/README.md` com as regras e `sessoes/2026-10-18-organizacao-do-historico-por-sessoes.md`, que é um resumo estruturado, não uma transcrição integral.
+- As instruções de retomada e os arquivos do modelo foram atualizados na branch `feat/retomada-checkpoint-obrigatorio`.
+- **Não foi alterado o código do TREG PWA, nem o arquivo `historico.md`; não houve merge para `main` nem ação na VPS.**
+- **Ponto de retomada:** revisar a branch e seus arquivos documentais. Não fazer merge em `main` sem aprovação explícita.
