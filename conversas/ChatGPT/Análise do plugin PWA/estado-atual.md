@@ -2,6 +2,8 @@
 
 > Este documento é um ponto de partida rápido. Confirme sempre o estado real no repositório e nos relatórios antes de agir.
 
+> **Atualização mais recente — 2026-10-18:** a versão C7 foi registrada como estável na tag anotada `treg-pwa-v1.0.0-estavel` e em uma Release vinculada. Consulte “Versão estável registrada — 2026-10-18” ao final. A Fase 2 não foi iniciada; não reinstalar.
+
 ## Projeto principal
 
 - Repositório: https://github.com/Nifm1584/plugin-v1-pwa
@@ -81,3 +83,20 @@ Esta regra é de continuidade documental e não autoriza mudanças no código, n
 - A versão exata do Hermes alvo deve ser confirmada antes de futuras integrações, porque o histórico contém referências divergentes a v0.21.6 e v0.22.2.
 - **Próximo passo único recomendado:** atualizar somente a documentação do relatório 17 na branch própria para alinhar as evidências manuais de QR e áudio/transcrição; sem alterar código, fazer merge ou tocar na VPS. Depois da revisão do usuário, selecionar e autorizar a próxima fase.
 - Nesta retomada, nenhum arquivo do repositório de código foi modificado e nenhuma ação na VPS foi executada. O README não precisou de alteração: o protocolo de arquivo por sessão já está documentado nele e em `sessoes/README.md`.
+
+## Versão estável registrada — 2026-10-18
+
+- **Tag anotada:** `treg-pwa-v1.0.0-estavel`; objeto da tag `1d4137e21d127cf2e7490d171c5502bcbfb75155`; aponta exatamente para o commit `6218f0fd25a2047b5caba09cf854af74058db03d`.
+- **Tag URL:** https://github.com/Nifm1584/plugin-v1-pwa/tree/treg-pwa-v1.0.0-estavel
+- **Release:** `TREG PWA — Versão estável validada C7`, ID `416672282`, publicada em 2026-10-18T19:55:42Z; `draft: false`, `prerelease: false`.
+- **Release URL:** https://github.com/Nifm1584/plugin-v1-pwa/releases/tag/treg-pwa-v1.0.0-estavel
+- **CI da versão:** run `39075301916`, conclusão `success`, `head_sha` igual ao commit C7.
+- **Relatório de fase no projeto:** `report/18-fase-1-registro-versao-estavel-c7.md`, branch `docs/fase-1-versao-estavel-c7`, commit `5c892ef5ba1ce57ce9cc36292bc409e7086f3882`.
+- **Link do relatório:** https://github.com/Nifm1584/plugin-v1-pwa/blob/docs/fase-1-versao-estavel-c7/report/18-fase-1-registro-versao-estavel-c7.md
+- **Validação manual relatada pelo usuário:** leitura física do QR Code, funcionamento no navegador do celular e uso do aplicativo instalado na VPS. Não foi reexecutada nesta fase; a Release registra isso como evidência do usuário.
+- **Limitação:** a tag é anotada, mas não assinada criptograficamente; o GitHub a marca como `unsigned`.
+- **Integridade:** a `main` do projeto permanece em `07cacfeb7a5af3650a1bdf3335af2be3262806aa`; nenhum arquivo de código foi alterado; a branch e o commit C7 não foram modificados; nenhuma tag foi movida ou reutilizada.
+- **VPS:** nenhuma operação foi realizada nesta fase — sem instalação, reinstalação, reinício, backup ou alteração do plugin original.
+- **Documentação:** este checkpoint foi publicado em branch própria do repositório de histórico, junto com a sessão `sessoes/2026-10-18-registro-versao-estavel-treg-pwa.md`. O `historico.md` original não foi alterado.
+- **Próximo passo:** a Fase 1 está concluída; a Fase 2 não foi iniciada. Aguardar autorização explícita do usuário. Não reinstalar nem alterar a VPS antes disso.
+- **Nota sobre o report 17:** ele permanece como documento de planejamento e não foi alterado nesta fase; para a versão estável, prevalecem o report 18, a Release e este registro.
