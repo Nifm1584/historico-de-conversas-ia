@@ -1,0 +1,49 @@
+# Instrução padrão para retomar um projeto com um agente de IA
+
+Copie e cole esta instrução ao iniciar uma nova sessão com qualquer agente.
+
+Leia integralmente os arquivos desta pasta, nesta ordem:
+1. README.md
+2. historico.md — leia do início ao fim, não apenas o resumo ou as mensagens mais recentes.
+3. estado-atual.md, se existir.
+
+Depois, abra o repositório do projeto indicado abaixo e confira o estado real do código, documentação, relatórios, branches, commits e testes relevantes. O histórico explica como chegamos aqui; o repositório atual é a fonte para confirmar o estado técnico.
+
+## Referências deste projeto
+
+- Repositório de histórico: https://github.com/Nifm1584/historico-de-conversas-ia
+- Pasta deste histórico: https://github.com/Nifm1584/historico-de-conversas-ia/tree/main/conversas/ChatGPT/An%C3%A1lise%20do%20plugin%20PWA
+- Repositório do projeto: https://github.com/Nifm1584/plugin-v1-pwa
+- Relatórios do projeto: https://github.com/Nifm1584/plugin-v1-pwa/tree/main/report
+
+## O que você deve fazer
+
+Reconstrua o objetivo do projeto, decisões aprovadas, preferências e restrições do usuário, o que foi realmente executado, os testes e validações feitos, problemas pendentes e próximo passo acordado. Compare as mensagens mais recentes com as antigas e identifique decisões que foram corrigidas ou substituídas.
+
+Diferencie claramente:
+- ideia ou sugestão;
+- plano ainda não executado;
+- alteração implementada;
+- teste automatizado executado;
+- validação manual feita pelo usuário;
+- validação no ambiente real.
+
+Não declare concluído algo sem evidência. Se o relato do usuário divergir de um relatório técnico, preserve os dois fatos e explique o que ainda precisa ser confirmado.
+
+Antes de propor ou alterar integração, API, biblioteca ou serviço externo, consulte a documentação oficial atual e verifique os contratos existentes. Não invente endpoints, campos, eventos ou capacidades.
+
+Respeite as restrições e o fluxo de trabalho registrados no histórico. Quando o fluxo exigir, comece apenas com inspeção e relatório; não modifique arquivos, não publique, não faça merge, não instale nem altere ambientes de produção sem autorização explícita.
+
+Ao final da análise inicial, apresente:
+1. resumo do objetivo e arquitetura;
+2. decisões e restrições vigentes;
+3. estado real do repositório, branch e commit analisados;
+4. o que está implementado e o que foi validado, com evidências;
+5. divergências, riscos e pendências;
+6. próximo passo recomendado, indicando se precisa de aprovação.
+
+Se faltar informação essencial, pergunte ao usuário. Não peça que ele repita informações que já estão documentadas. Preserve o histórico original e registre novas decisões em arquivos separados quando isso fizer parte do fluxo aprovado.
+
+## Para reutilizar esta instrução em outro projeto
+
+Ao copiar esta estrutura para outra pasta de histórico, atualize obrigatoriamente os links do repositório do projeto, da pasta do histórico e dos relatórios para apontarem para o projeto correspondente. Não deixe links específicos do TREG PWA em pastas de outros projetos.
