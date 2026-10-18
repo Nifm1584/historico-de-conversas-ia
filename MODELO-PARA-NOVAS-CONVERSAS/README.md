@@ -8,6 +8,7 @@ Copie esta pasta para cada nova conversa/projeto que precise preservar contexto 
 2. `historico.md` — histórico completo em ordem cronológica, sem substituir por resumo.
 3. `estado-atual.md` — decisões vigentes, situação confirmada, pendências e próximo passo.
 4. `INSTRUCAO-PARA-NOVO-AGENTE.md` — instrução pronta para copiar e colar no agente novo.
+5. `PROMPT-DE-TAREFA.md` — modelo reutilizável para prompts de execução, com encerramento obrigatório e checkpoint de continuidade.
 
 ## Ao copiar o modelo
 
