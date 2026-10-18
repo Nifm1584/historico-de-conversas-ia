@@ -40,3 +40,9 @@
 ## Regra para resolver divergências
 
 O histórico é cronológico e contém hipóteses antigas que foram corrigidas depois. Use as mensagens mais recentes para entender as decisões finais, mas confirme o estado técnico atual pelo código, documentação e evidências. Nunca transforme uma afirmação de conversa em validação técnica sem comprovação, nem descarte uma validação feita pelo usuário sem explicar a diferença entre o teste manual e o teste automatizado.
+
+## Protocolo obrigatório de continuidade entre sessões
+
+Todo prompt de tarefa futuro deve terminar com a seção **“ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”**. O agente que executar a tarefa deve registrar resultado real, arquivos alterados, testes e evidências, repositório/branch/commits, pendências, próximo passo único e aprovações necessárias. Deve atualizar este arquivo quando tiver acesso e autorização; manter `historico.md` intacto; e nunca afirmar que publicou uma atualização sem confirmar. Se não puder gravar no GitHub, deve devolver o checkpoint completo no relatório/resposta.
+
+Esta regra é de continuidade documental e não autoriza mudanças no código, na VPS, na branch principal, nem publicação/merge. A próxima sessão deve comparar este estado com o histórico e com o repositório real antes de agir.
