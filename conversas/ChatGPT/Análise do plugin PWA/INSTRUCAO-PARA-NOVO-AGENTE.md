@@ -44,6 +44,23 @@ Ao final da análise inicial, apresente:
 
 Se faltar informação essencial, pergunte ao usuário. Não peça que ele repita informações que já estão documentadas. Preserve o histórico original e registre novas decisões em arquivos separados quando isso fizer parte do fluxo aprovado.
 
+## Regra obrigatória para todo prompt de tarefa e encerramento
+
+Sempre que você preparar um prompt para executar a próxima tarefa deste projeto — seja para OpenCode, OpenCloud, outro agente ou ferramenta — inclua **no final do prompt** uma seção chamada “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Essa seção deve instruir o agente a, antes de encerrar:
+
+1. Informar o que foi feito e o que não foi feito, sem declarar sucesso sem evidência.
+2. Listar arquivos criados, alterados ou removidos e resumir cada mudança.
+3. Informar testes executados, resultados e evidências; separar testes automatizados, validações manuais e validações no ambiente real.
+4. Registrar repositório, branch, commit inicial e commit final (quando aplicável); dizer explicitamente se não houve commit, publicação, instalação ou alteração de ambiente.
+5. Atualizar `estado-atual.md` com o estado confirmado, decisões vigentes, pendências, divergências e próximo passo acordado; preservar `historico.md` integral e cronológico, sem reescrevê-lo.
+6. Criar/atualizar um relatório de fase em `report/` no repositório do projeto quando isso fizer parte do fluxo autorizado.
+7. Entregar um bloco final “PONTO EXATO DE RETOMADA” contendo: fase/tarefa concluída; estado real; evidências; o que falta; próximo passo único recomendado; aprovação necessária; e o prompt/ação que deve vir a seguir.
+8. Se o agente não tiver acesso ao repositório de histórico, não puder editar os arquivos ou não tiver autorização para publicar, deve fornecer o conteúdo atualizado ou o bloco de checkpoint na resposta e declarar claramente que não o gravou no GitHub. Nunca alegar que atualizou um arquivo sem confirmar.
+
+O prompt deve manter as restrições de escopo já aprovadas: não tocar em partes validadas sem necessidade, não executar fases futuras por conta própria e não publicar, fazer merge, instalar ou alterar produção sem autorização explícita. O checkpoint registra o estado; não concede autorização para a próxima fase.
+
+Ao iniciar uma nova sessão, leia o `estado-atual.md`, compare-o com o histórico e confirme o estado real do repositório antes de continuar. Se houver conflito, não escolha silenciosamente: documente e peça esclarecimento quando necessário.
+
 ## Para reutilizar esta instrução em outro projeto
 
 Ao copiar esta estrutura para outra pasta de histórico, atualize obrigatoriamente os links do repositório do projeto, da pasta do histórico e dos relatórios para apontarem para o projeto correspondente. Não deixe links específicos do TREG PWA em pastas de outros projetos.
