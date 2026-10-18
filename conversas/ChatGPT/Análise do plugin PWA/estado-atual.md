@@ -46,3 +46,10 @@ O histórico é cronológico e contém hipóteses antigas que foram corrigidas d
 Todo prompt de tarefa futuro deve terminar com a seção **“ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”**. O agente que executar a tarefa deve registrar resultado real, arquivos alterados, testes e evidências, repositório/branch/commits, pendências, próximo passo único e aprovações necessárias. Deve atualizar este arquivo quando tiver acesso e autorização; manter `historico.md` intacto; e nunca afirmar que publicou uma atualização sem confirmar. Se não puder gravar no GitHub, deve devolver o checkpoint completo no relatório/resposta.
 
 Esta regra é de continuidade documental e não autoriza mudanças no código, na VPS, na branch principal, nem publicação/merge. A próxima sessão deve comparar este estado com o histórico e com o repositório real antes de agir.
+
+## Protocolo de histórico por sessões
+
+- `historico.md` é o histórico original: preservar integralmente, sem substituir pelo acumulado de novas sessões.
+- Novas sessões ficam em `sessoes/AAAA-MM-DD-assunto-curto.md`, um arquivo por sessão, sem sobrescrever arquivos anteriores.
+- Na retomada, ler todos os arquivos de `sessoes/` em ordem cronológica, depois conferir `estado-atual.md` e validar o estado real do repositório.
+- Distinguir transcrição completa de resumo/checkpoint. Não apresentar resumo como se fosse a conversa integral.
