@@ -30,4 +30,8 @@ NOME-DA-CONVERSA/
 └── INSTRUCAO-PARA-NOVO-AGENTE.md
 ```
 
+## Continuidade obrigatória entre tarefas
+
+Todo prompt de tarefa deve terminar com a seção “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Ao final, o agente registra evidências, arquivos alterados, testes, branch/commits, pendências, aprovação necessária e próximo passo em `estado-atual.md`, sem reescrever `historico.md`. Se não puder atualizar o GitHub, deve devolver o checkpoint completo e informar que não gravou a atualização. Esse protocolo não autoriza mudanças adicionais nem a próxima fase.
+
 Este modelo é a referência padrão para as novas pastas de histórico neste repositório.
