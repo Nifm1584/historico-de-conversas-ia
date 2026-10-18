@@ -36,6 +36,21 @@ Apresente a análise inicial com: objetivo/arquitetura; decisões vigentes; bran
 
 Preserve o histórico original. Registre novas decisões em arquivos separados quando fizer parte do fluxo aprovado.
 
+## Regra obrigatória para todo prompt de tarefa e encerramento
+
+Sempre que criar um prompt para a próxima tarefa, inclua **no final do prompt** uma seção chamada “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Ela deve exigir que o agente:
+
+1. Registre o que foi feito e o que não foi feito, sem alegar sucesso sem evidência.
+2. Liste arquivos criados/alterados/removidos e resuma as mudanças.
+3. Registre testes e evidências, separando teste automatizado, validação manual e validação em ambiente real.
+4. Informe repositório, branch, commit inicial/final quando aplicável, e declare se não houve commit, publicação, instalação ou mudança de ambiente.
+5. Atualize `estado-atual.md` com decisões vigentes, estado confirmado, pendências, divergências e próximo passo; preserve `historico.md` sem reescrevê-lo.
+6. Atualize/crie relatório da fase na pasta de relatórios do projeto quando previsto no fluxo aprovado.
+7. Termine com “PONTO EXATO DE RETOMADA”: tarefa/fase, estado confirmado, evidências, pendências, próximo passo único, aprovação necessária e próxima ação/prompt.
+8. Se não tiver acesso ou autorização para gravar no histórico, devolva o checkpoint completo e diga claramente que não atualizou o GitHub.
+
+O registro não autoriza a próxima fase. Respeite limites de escopo e não publique, faça merge, instale nem altere produção sem autorização explícita. Em uma sessão nova, leia `estado-atual.md`, confira o histórico e valide branch/commit/estado real antes de continuar.
+
 ## Antes de usar
 
 Substitua todos os campos [LINK_...] pelos endereços reais. Nunca deixe referências de outro projeto nesta instrução.
