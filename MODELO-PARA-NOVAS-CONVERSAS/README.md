@@ -7,7 +7,9 @@ Copie esta pasta para cada nova conversa/projeto que precise preservar contexto 
 1. `README.md` — finalidade da pasta, ordem de leitura e links do projeto.
 2. `historico.md` — histórico completo em ordem cronológica, sem substituir por resumo.
 3. `estado-atual.md` — decisões vigentes, situação confirmada, pendências e próximo passo.
-4. `INSTRUCAO-PARA-NOVO-AGENTE.md` — instrução pronta para copiar e colar no agente novo.
+4. `sessoes/AAAA-MM-DD-assunto-curto.md` — um arquivo separado para cada nova sessão; preservar os anteriores.
+5. `INSTRUCAO-PARA-NOVO-AGENTE.md` — instrução pronta para copiar e colar no agente novo.
+6. `PROMPT-DE-TAREFA.md` — modelo reutilizável para prompts de execução, com encerramento obrigatório e checkpoint de continuidade.
 
 ## Ao copiar o modelo
 
@@ -25,9 +27,21 @@ Copie esta pasta para cada nova conversa/projeto que precise preservar contexto 
 ```text
 NOME-DA-CONVERSA/
 ├── README.md
-├── historico.md
+├── historico.md                 # histórico original, preservado
+├── sessoes/
+│   ├── README.md                # regras de nomeação e arquivamento
+│   └── AAAA-MM-DD-assunto-curto.md
 ├── estado-atual.md
-└── INSTRUCAO-PARA-NOVO-AGENTE.md
+├── INSTRUCAO-PARA-NOVO-AGENTE.md
+└── PROMPT-DE-TAREFA.md
 ```
 
+## Continuidade obrigatória entre tarefas
+
+Todo prompt de tarefa deve terminar com a seção “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Ao final, o agente registra evidências, arquivos alterados, testes, branch/commits, pendências, aprovação necessária e próximo passo em `estado-atual.md`, sem reescrever `historico.md`. Se não puder atualizar o GitHub, deve devolver o checkpoint completo e informar que não gravou a atualização. Esse protocolo não autoriza mudanças adicionais nem a próxima fase.
+
 Este modelo é a referência padrão para as novas pastas de histórico neste repositório.
+
+## Regra para novas sessões
+
+Nomeie cada arquivo como `AAAA-MM-DD-assunto-curto.md`, usando a data da sessão e um assunto identificável. Não sobrescreva sessões antigas nem substitua `historico.md` por um novo histórico acumulado. Se o arquivo for um resumo em vez de transcrição completa, deixe isso explícito no título e no conteúdo.

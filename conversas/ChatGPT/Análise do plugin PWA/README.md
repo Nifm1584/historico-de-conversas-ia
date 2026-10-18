@@ -8,9 +8,10 @@ Esta pasta preserva o histórico da conversa **“Análise do plugin PWA”** e 
 
 1. Leia este README.
 2. Leia todo o arquivo [historico.md](./historico.md), do início ao fim.
-3. Leia [estado-atual.md](./estado-atual.md) para encontrar rapidamente as decisões mais recentes e o próximo passo conhecido.
-4. Copie e use as orientações de [INSTRUCAO-PARA-NOVO-AGENTE.md](./INSTRUCAO-PARA-NOVO-AGENTE.md) ao iniciar uma sessão com um agente novo.
-5. Abra o repositório do projeto TREG PWA: [Nifm1584/plugin-v1-pwa](https://github.com/Nifm1584/plugin-v1-pwa). Confira o código, os relatórios, testes, branches e commits relevantes. Não trate o histórico como substituto do código atual.
+3. Leia todos os arquivos `.md` dentro de `sessoes/`, em ordem cronológica pelo nome (do mais antigo ao mais recente). Essa pasta guarda cada nova sessão separadamente; não sobrescreva arquivos antigos. Se não existir ou estiver vazia, prossiga e registre isso.
+4. Leia [estado-atual.md](./estado-atual.md) para encontrar rapidamente as decisões mais recentes e o próximo passo conhecido.
+5. Copie e use as orientações de [INSTRUCAO-PARA-NOVO-AGENTE.md](./INSTRUCAO-PARA-NOVO-AGENTE.md) ao iniciar uma sessão com um agente novo.
+6. Abra o repositório do projeto TREG PWA: [Nifm1584/plugin-v1-pwa](https://github.com/Nifm1584/plugin-v1-pwa). Confira o código, os relatórios, testes, branches e commits relevantes. Não trate o histórico como substituto do código atual.
 
 ## Regras para o agente
 
@@ -22,6 +23,10 @@ Esta pasta preserva o histórico da conversa **“Análise do plugin PWA”** e 
 - Não instale na VPS, reinicie serviços, faça merge na main nem publique alterações sem autorização explícita.
 - Não altere nem substitua o histórico original. Registre novas decisões em arquivos separados.
 - Se histórico, relato do usuário e código divergirem, descreva a divergência e peça validação quando necessário.
+
+## Continuidade obrigatória entre tarefas
+
+Todo prompt de tarefa futuro deve terminar com a seção “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Ao final, o agente deve registrar em `estado-atual.md` o resultado confirmado, arquivos alterados, testes/evidências, branch/commits, o que ficou pendente, próximo passo único e aprovações necessárias. O histórico integral `historico.md` não deve ser reescrito. Se o agente não puder gravar no GitHub, deve devolver o checkpoint completo e informar claramente que não atualizou o arquivo. Esse protocolo não autoriza implementar a próxima fase nem tocar em partes validadas.
 
 ## Repositórios e referências
 
