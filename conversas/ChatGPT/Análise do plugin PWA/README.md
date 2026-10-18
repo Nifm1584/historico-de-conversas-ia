@@ -8,9 +8,10 @@ Esta pasta preserva o histórico da conversa **“Análise do plugin PWA”** e 
 
 1. Leia este README.
 2. Leia todo o arquivo [historico.md](./historico.md), do início ao fim.
-3. Leia [estado-atual.md](./estado-atual.md) para encontrar rapidamente as decisões mais recentes e o próximo passo conhecido.
-4. Copie e use as orientações de [INSTRUCAO-PARA-NOVO-AGENTE.md](./INSTRUCAO-PARA-NOVO-AGENTE.md) ao iniciar uma sessão com um agente novo.
-5. Abra o repositório do projeto TREG PWA: [Nifm1584/plugin-v1-pwa](https://github.com/Nifm1584/plugin-v1-pwa). Confira o código, os relatórios, testes, branches e commits relevantes. Não trate o histórico como substituto do código atual.
+3. Leia todos os arquivos `.md` dentro de `sessoes/`, em ordem cronológica pelo nome (do mais antigo ao mais recente). Essa pasta guarda cada nova sessão separadamente; não sobrescreva arquivos antigos. Se não existir ou estiver vazia, prossiga e registre isso.
+4. Leia [estado-atual.md](./estado-atual.md) para encontrar rapidamente as decisões mais recentes e o próximo passo conhecido.
+5. Copie e use as orientações de [INSTRUCAO-PARA-NOVO-AGENTE.md](./INSTRUCAO-PARA-NOVO-AGENTE.md) ao iniciar uma sessão com um agente novo.
+6. Abra o repositório do projeto TREG PWA: [Nifm1584/plugin-v1-pwa](https://github.com/Nifm1584/plugin-v1-pwa). Confira o código, os relatórios, testes, branches e commits relevantes. Não trate o histórico como substituto do código atual.
 
 ## Regras para o agente
 
