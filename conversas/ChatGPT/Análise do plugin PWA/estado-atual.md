@@ -5,7 +5,8 @@
 ## Projeto principal
 
 - Repositório: https://github.com/Nifm1584/plugin-v1-pwa
-- Relatórios: https://github.com/Nifm1584/plugin-v1-pwa/tree/main/report
+- Relatórios do projeto: https://github.com/Nifm1584/plugin-v1-pwa/tree/main/report
+- Relatório mais recente conhecido da Fase 3: https://github.com/Nifm1584/plugin-v1-pwa/blob/docs/fase-3-checklist-roadmap/report/17-fase-3-checklist-funcional-e-roadmap.md
 - Projeto: plugin independente treg-pwa para o Hermes, separado do plugin original hermes-pwa.
 - Objetivo geral: melhorar a experiência de mensageiro no celular, mantendo identidade independente e implementando somente recursos reais e compatíveis com a API/documentação oficial do Hermes.
 
@@ -19,22 +20,23 @@
 - O usuário informou que uma imagem enviada anteriormente foi visualizada/validada; respeite a confirmação mais recente no histórico. Diferencie imagem incorporada à mensagem de envio como arquivo/anexo se o teste específico não estiver claro.
 - Fluxo de trabalho: uma fase por vez; inspecionar e reportar antes de alterar; aguardar revisão/aprovação; testes e relatório por fase; sem VPS, reinício, merge na main ou publicação sem autorização explícita.
 
-## Último estado conhecido no histórico
+## Último estado conhecido no GitHub
 
-- A correção do QR Code foi desenvolvida na branch fix/treg-pwa-c7-qrcode-fix.
-- O histórico registra o commit 6218f0fd25a2047b5caba09cf854af74058db03d como a versão C7 validada por testes automatizados e depois instalada pelo Hermes para validação no celular.
-- O histórico relata que o usuário conseguiu parear o celular e usar áudio/transcrição. Confira o relatório e o estado atual do repositório antes de assumir que esse commit ainda é o HEAD ou que todos os testes estão concluídos.
-- A main não foi mesclada com a branch C7 segundo o histórico.
-- A etapa seguinte proposta é **Fase 3 — checklist funcional e roadmap**: revisar o código atual, relatórios anteriores e documentação oficial do Hermes/API, classificar recursos por evidência e criar report/17-fase-3-checklist-funcional-e-roadmap.md. O prompt foi preparado e o usuário disse que poderia prosseguir, mas este histórico não comprova que a execução da Fase 3 já ocorreu.
+- Branches que foram verificadas: main em 07cacfeb7a5af3650a1bdf3335af2be3262806aa; fix/treg-pwa-c7-qrcode-fix em 6218f0fd25a2047b5caba09cf854af74058db03d; e docs/fase-3-checklist-roadmap em bafed16675cf6bc2268a98f79ddeb13be16a3b05.
+- O relatório 17 da Fase 3 existe na branch docs/fase-3-checklist-roadmap: https://github.com/Nifm1584/plugin-v1-pwa/blob/docs/fase-3-checklist-roadmap/report/17-fase-3-checklist-funcional-e-roadmap.md
+- O commit conhecido mais recente nessa branch é bafed16675cf6bc2268a98f79ddeb13be16a3b05, que corrigiu a redação do relatório 17.
+- O relatório 17 declara que esta fase foi de análise e planejamento: não alterou código do plugin, não instalou na VPS, não reiniciou serviços, não tocou no hermes-pwa original e não fez merge na main.
+- O relatório recomenda a ordem P0 (validar em dispositivos reais), P1 (legibilidade e estrutura da conversa), P2 (menus, avatares e tema manual), P3 (status semânticos apenas com contratos reais), P4 (mídia persistente/câmera) e P5 (escala/offline/notificações).
+- O relatório 17 ainda diz que PWA instalada, upload real de imagem/arquivo, áudio/transcrição em dispositivos e vários comportamentos mobile precisam de teste. O histórico também contém relatos posteriores do usuário sobre testes reais. Compare as evidências e esclareça divergências; não ignore o relato do usuário nem marque como comprovado tecnicamente sem verificar.
+- Não assuma que uma branch histórica continua sendo a versão instalada na VPS. Confirme o commit instalado com o usuário ou com evidência do ambiente antes de qualquer instrução de instalação.
 
 ## Próxima ação recomendada
 
-1. Inspecione o repositório e identifique o branch/commit atual, relatórios existentes e estado da CI.
-2. Consulte a documentação oficial atual do Hermes/API e os relatórios existentes (principalmente inventário, auditoria mobile, integração API, segurança, testes, plano de evolução, evidências e relatório C7).
-3. Execute somente a análise e produza o checklist/roadmap da Fase 3; não altere o código nem a VPS nesta etapa.
-4. Publique o relatório numa branch própria apenas conforme o fluxo aprovado, informando commit, links, testes e pendências. Não faça merge na main.
-5. Apresente o resultado para o usuário revisar antes de iniciar implementação.
+1. Leia o relatório 17 completo e confira os arquivos e commits na branch docs/fase-3-checklist-roadmap.
+2. Compare o checklist com o histórico completo, dando atenção especial às confirmações do usuário sobre QR/pareamento, áudio, imagem enviada e comportamento de instalação pelo navegador. Se houver divergência entre a experiência relatada e o relatório estático, registre-a e peça validação específica apenas quando necessária.
+3. Apresente o relatório 17 ao usuário para revisão. Não inicie implementação automaticamente.
+4. Após aprovação, comece somente a fase autorizada, em branch própria, com relatório, testes e evidências. Não faça merge na main nem alterações na VPS sem autorização explícita.
 
 ## Regra para resolver divergências
 
-O histórico é cronológico e contém hipóteses antigas que foram corrigidas depois. Use as mensagens mais recentes para entender as decisões finais, mas confirme o estado técnico atual pelo código, documentação e evidências. Nunca transforme uma afirmação de conversa em validação técnica sem comprovação.
+O histórico é cronológico e contém hipóteses antigas que foram corrigidas depois. Use as mensagens mais recentes para entender as decisões finais, mas confirme o estado técnico atual pelo código, documentação e evidências. Nunca transforme uma afirmação de conversa em validação técnica sem comprovação, nem descarte uma validação feita pelo usuário sem explicar a diferença entre o teste manual e o teste automatizado.
