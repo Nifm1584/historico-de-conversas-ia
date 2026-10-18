@@ -45,3 +45,10 @@ Diferencie fatos comprovados, relatos do usuário, hipóteses e planos. Confira 
 - Próximo prompt/ação sugerida:
 
 Ao concluir cada tarefa, atualize esta seção com fatos verificáveis. Não reescreva o histórico cronológico. Se não houver acesso/autorização para editar este arquivo, entregue o conteúdo do checkpoint na resposta e declare que o arquivo não foi atualizado. Registrar o checkpoint não autoriza executar a próxima fase.
+
+## Arquivos de sessões consultados na retomada
+
+- Arquivos encontrados em `sessoes/`:
+- Arquivos lidos integralmente:
+- Ordem cronológica confirmada: sim/não
+- Observações sobre arquivos ausentes ou que contêm apenas resumo:
