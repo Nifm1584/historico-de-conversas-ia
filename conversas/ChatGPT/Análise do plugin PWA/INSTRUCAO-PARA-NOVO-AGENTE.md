@@ -4,8 +4,11 @@ Copie e cole esta instrução ao iniciar uma nova sessão com qualquer agente.
 
 Leia integralmente os arquivos desta pasta, nesta ordem:
 1. README.md
-2. historico.md — leia do início ao fim, não apenas o resumo ou as mensagens mais recentes.
-3. estado-atual.md, se existir.
+2. `historico.md` — leia do início ao fim, não apenas o resumo ou as mensagens mais recentes.
+3. Todos os arquivos `sessoes/*.md`, ordenados pela data no nome do arquivo (do mais antigo ao mais recente); leia cada arquivo completo. Se a pasta `sessoes/` não existir ou estiver vazia, registre isso e continue.
+4. `estado-atual.md`, se existir.
+
+Ao iniciar, informe os nomes dos arquivos de sessão encontrados e confirme quais foram lidos integralmente. Não presuma que o arquivo mais recente substitui os anteriores.
 
 Depois, abra o repositório do projeto indicado abaixo e confira o estado real do código, documentação, relatórios, branches, commits e testes relevantes. O histórico explica como chegamos aqui; o repositório atual é a fonte para confirmar o estado técnico.
 
@@ -64,3 +67,7 @@ Ao iniciar uma nova sessão, leia o `estado-atual.md`, compare-o com o históric
 ## Para reutilizar esta instrução em outro projeto
 
 Ao copiar esta estrutura para outra pasta de histórico, atualize obrigatoriamente os links do repositório do projeto, da pasta do histórico e dos relatórios para apontarem para o projeto correspondente. Não deixe links específicos do TREG PWA em pastas de outros projetos.
+
+## Protocolo de arquivamento de sessões
+
+Cada nova sessão/conversa deve ser preservada em um arquivo próprio dentro de `sessoes/`, com nome `AAAA-MM-DD-assunto-curto.md` (ex.: `2026-10-18-organizacao-do-historico.md`). Preserve os arquivos de sessões anteriores sem sobrescrevê-los. Não cole a conversa nova por cima de `historico.md` nem reconstrua o histórico inteiro a cada atualização. Quando disponível, arquive a transcrição completa da sessão; se só houver um resumo/checkpoint, identifique-o explicitamente como resumo, nunca como transcrição integral. Atualize `estado-atual.md` com o ponto de retomada confirmado e registre no README o protocolo. Se não conseguir criar/gravar o arquivo no GitHub, forneça o conteúdo pronto para o usuário salvar e diga que não foi publicado.
