@@ -23,6 +23,10 @@ Esta pasta preserva o histórico da conversa **“Análise do plugin PWA”** e 
 - Não altere nem substitua o histórico original. Registre novas decisões em arquivos separados.
 - Se histórico, relato do usuário e código divergirem, descreva a divergência e peça validação quando necessário.
 
+## Continuidade obrigatória entre tarefas
+
+Todo prompt de tarefa futuro deve terminar com a seção “ENCERRAMENTO OBRIGATÓRIO — PRESERVAR O PONTO DE RETOMADA”. Ao final, o agente deve registrar em `estado-atual.md` o resultado confirmado, arquivos alterados, testes/evidências, branch/commits, o que ficou pendente, próximo passo único e aprovações necessárias. O histórico integral `historico.md` não deve ser reescrito. Se o agente não puder gravar no GitHub, deve devolver o checkpoint completo e informar claramente que não atualizou o arquivo. Esse protocolo não autoriza implementar a próxima fase nem tocar em partes validadas.
+
 ## Repositórios e referências
 
 - **Projeto:** https://github.com/Nifm1584/plugin-v1-pwa
