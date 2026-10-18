@@ -1,31 +1,38 @@
 # Análise do plugin PWA
 
-## Para que serve esta pasta
+## Objetivo desta pasta
 
-Esta pasta guarda o histórico completo da conversa intitulada **“Análise do plugin PWA”**. Ela faz parte do repositório [historico-de-conversas-ia](https://github.com/Nifm1584/historico-de-conversas-ia), que preserva conversas com diferentes IAs para recuperar contexto e dar continuidade a projetos.
+Esta pasta preserva o histórico da conversa **“Análise do plugin PWA”** e orienta qualquer agente de IA a retomar o trabalho com base em evidências, sem fazer o usuário repetir todo o contexto.
 
-## Como utilizar
+## Leia nesta ordem
 
-1. Envie para esta pasta o arquivo Markdown com o histórico completo desta conversa, mantendo as mensagens na ordem cronológica.
-2. Prefira o nome `historico.md` para o arquivo principal.
-3. Não substitua o histórico original por um resumo. Se necessário, crie arquivos complementares, como `resumo.md` ou `estado-atual.md`.
-4. Antes de publicar o histórico, remova senhas, tokens, chaves de API, cookies, dados privados e outras informações confidenciais.
+1. Leia este README.
+2. Leia todo o arquivo [historico.md](./historico.md), do início ao fim. Ele contém a conversa cronológica e é a fonte principal para decisões, contexto e histórico.
+3. Leia [estado-atual.md](./estado-atual.md) para encontrar rapidamente o projeto de código, as decisões mais recentes e o próximo passo conhecido.
+4. Abra o repositório do projeto TREG PWA: **[Nifm1584/plugin-v1-pwa](https://github.com/Nifm1584/plugin-v1-pwa)**. Consulte o README, o código atual, os relatórios em report/, testes, branches e commits relevantes. Não trate o histórico da conversa como substituto do código atual.
 
-## Instruções para a IA que consultar esta pasta
+## Instruções obrigatórias para o agente
 
-Ao receber o link desta pasta, leia primeiro este README e depois leia o arquivo `historico.md` (ou o arquivo de histórico disponível).
+- Use o histórico inteiro para compreender objetivo, decisões, preferências, restrições, testes, problemas e sequência de trabalho.
+- Dê prioridade às decisões e correções mais recentes quando uma mensagem antiga contradisser uma atualização posterior. Registre a contradição se ela ainda não estiver resolvida; não esconda nem invente fatos.
+- Diferencie **sugestão**, **planejamento**, **alteração implementada**, **teste executado** e **validação real na instalação**. Só declare algo concluído quando houver evidência no histórico, relatório, commit ou teste.
+- Antes de recomendar ou implementar qualquer funcionalidade do Hermes, consulte a documentação oficial atualizada do Hermes e da API relevante. Não invente endpoints, campos, eventos ou recursos. Se não houver suporte comprovado, explique a limitação e proponha uma alternativa somente se for viável.
+- Preserve o plugin original hermes-pwa e o núcleo do Hermes. O projeto independente é treg-pwa; confira o estado atual do repositório antes de usar nomes de branches ou SHAs citados no histórico.
+- Siga o fluxo de trabalho por fases: primeiro inspecionar e reportar; apresentar o relatório para revisão; só implementar após aprovação. Não instale na VPS, reinicie serviços, faça merge na main ou publique alterações sem autorização explícita.
+- Para cada fase aprovada, registre evidências, testes, limitações e pendências em um relatório dentro de report/, conforme o fluxo acordado.
+- Se faltar informação essencial ou o histórico e o código atual divergirem, pergunte ao usuário em vez de adivinhar.
+- Não altere nem substitua o histórico original. Registre atualizações em arquivos separados.
 
-Use o histórico para compreender o objetivo do projeto, as decisões já tomadas, as preferências e restrições do usuário, os testes e resultados registrados, os problemas ainda pendentes e o próximo passo acordado.
+## Repositórios e referências
 
-Diferencie claramente o que foi apenas sugerido do que foi realmente executado e validado. Não invente etapas concluídas nem descarte decisões anteriores. Se o histórico não trouxer uma informação essencial, pergunte ao usuário.
+- **Projeto em desenvolvimento:** https://github.com/Nifm1584/plugin-v1-pwa
+- **Relatórios do projeto:** https://github.com/Nifm1584/plugin-v1-pwa/tree/main/report
+- **Histórico desta conversa:** https://github.com/Nifm1584/historico-de-conversas-ia/blob/main/conversas/ChatGPT/An%C3%A1lise%20do%20plugin%20PWA/historico.md
 
-A finalidade é **retomar o trabalho de onde parou**, sem exigir que o usuário explique novamente todo o contexto. Preserve o histórico existente; registre novas decisões ou atualizações em arquivos complementares, sem reescrever silenciosamente a conversa original.
+## Arquivos desta pasta
 
-## Conteúdo esperado
+- README.md — instruções para qualquer agente que retomar o trabalho.
+- historico.md — histórico cronológico completo da conversa.
+- estado-atual.md — resumo operacional das decisões mais recentes e próximo passo conhecido.
 
-- `README.md` — explica a finalidade desta pasta e como uma IA deve utilizá-la.
-- `historico.md` — histórico integral da conversa, a ser adicionado pelo proprietário.
-- `resumo.md` — opcional; resumo para consulta rápida.
-- `estado-atual.md` — opcional; situação atual, decisões aprovadas, pendências e próxima etapa.
-
-**Status:** a pasta foi criada por meio deste README. O histórico Markdown ainda precisa ser enviado pelo proprietário.
+**Importante:** o histórico é contexto histórico; o repositório do projeto é a fonte para confirmar o estado atual do código.
