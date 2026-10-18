@@ -38,7 +38,7 @@ Fase 1: registrar a versão C7 validada como referência estável do TREG PWA, p
 
 - Relatório de fase: `report/18-fase-1-registro-versao-estavel-c7.md`, branch `docs/fase-1-versao-estavel-c7`, commit `5c892ef5ba1ce57ce9cc36292bc409e7086f3882`.
 - Link: https://github.com/Nifm1584/plugin-v1-pwa/blob/docs/fase-1-versao-estavel-c7/report/18-fase-1-registro-versao-estavel-c7.md
-- Este arquivo de sessão e a atualização de `estado-atual.md` serão publicados em branch própria do repositório de histórico.
+- Este arquivo de sessão e a atualização de `estado-atual.md` foram publicados na branch `docs/registro-versao-estavel-treg-pwa` do repositório de histórico.
 - `historico.md` original não foi alterado.
 
 ## Integridade e operações não realizadas
@@ -52,7 +52,7 @@ Fase 1: registrar a versão C7 validada como referência estável do TREG PWA, p
 
 ## Ponto exato de retomada
 
-- **Concluído:** tag anotada e Release publicadas e verificadas; relatório 18 publicado; documentação de histórico em publicação.
+- **Concluído:** tag anotada e Release publicadas e verificadas; relatório 18 publicado; documentação de histórico publicada.
 - **Pendente:** revisão do usuário e autorização explícita para a próxima fase.
 - **Próximo passo único:** aguardar autorização. Não reinstalar nem alterar a VPS.
 - **Referência estável:** tag `treg-pwa-v1.0.0-estavel` → commit `6218f0fd25a2047b5caba09cf854af74058db03d`.
