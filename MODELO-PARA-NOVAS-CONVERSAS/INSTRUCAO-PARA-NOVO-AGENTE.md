@@ -3,9 +3,10 @@
 Copie e cole este texto em uma sessão nova. Antes de usar, substitua todos os campos entre colchetes pelos links corretos do projeto correspondente.
 
 Leia integralmente, nesta ordem:
-1. [LINK_DA_PASTA_DO_HISTORICO]/README.md
-2. [LINK_DA_PASTA_DO_HISTORICO]/historico.md — do início ao fim, não apenas o resumo.
-3. [LINK_DA_PASTA_DO_HISTORICO]/estado-atual.md.
+1. `[LINK_DA_PASTA_DO_HISTORICO]/README.md`
+2. `[LINK_DA_PASTA_DO_HISTORICO]/historico.md` — do início ao fim, não apenas o resumo.
+3. Todos os arquivos `[LINK_DA_PASTA_DO_HISTORICO]/sessoes/*.md`, ordenados pela data no nome (do mais antigo ao mais recente), lendo cada um por completo. Se não houver pasta/arquivos, registre isso e continue.
+4. `[LINK_DA_PASTA_DO_HISTORICO]/estado-atual.md`.
 
 Depois, acesse o repositório de código [LINK_DO_REPOSITORIO_DO_PROJETO] e confira o README, o código, os relatórios, branches, commits e testes relevantes. O histórico explica como o projeto evoluiu; o código atual e as evidências confirmam o estado técnico.
 
@@ -54,3 +55,7 @@ O registro não autoriza a próxima fase. Respeite limites de escopo e não publ
 ## Antes de usar
 
 Substitua todos os campos [LINK_...] pelos endereços reais. Nunca deixe referências de outro projeto nesta instrução.
+
+## Protocolo de sessões
+
+Cada nova sessão deve ser salva em um arquivo próprio `sessoes/AAAA-MM-DD-assunto-curto.md`. Preserve todos os arquivos antigos. Não substitua nem reescreva o histórico original para incorporar uma nova sessão. Identifique claramente se o arquivo contém transcrição integral ou apenas resumo/checkpoint. Ao retomar, liste e leia todas as sessões em ordem cronológica; depois compare com `estado-atual.md` e com o repositório real.
