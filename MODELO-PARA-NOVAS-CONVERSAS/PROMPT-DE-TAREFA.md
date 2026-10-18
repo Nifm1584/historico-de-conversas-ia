@@ -46,3 +46,7 @@ Antes de encerrar, entregue o relatório e atualize `estado-atual.md` no reposit
 Se não puder editar o repositório de histórico, não tiver permissão para publicar ou não houver ferramenta disponível, devolva na resposta o conteúdo completo para atualizar `estado-atual.md` e diga claramente que não gravou no GitHub. Nunca afirme que atualizou um arquivo sem verificar.
 
 Este checkpoint documenta o ponto de parada; **não concede autorização para iniciar a próxima fase**. Respeite o escopo, não toque em partes validadas sem necessidade e não publique, faça merge, instale nem altere produção sem autorização explícita.
+
+## Arquivamento separado da sessão
+
+Ao encerrar a tarefa, preserve a sessão atual em `sessoes/AAAA-MM-DD-assunto-curto.md`, sem sobrescrever arquivos de sessões anteriores e sem substituir o `historico.md` original. Use a transcrição integral quando disponível; se produzir apenas resumo/checkpoint, rotule-o claramente. Atualize `estado-atual.md`. Se não houver acesso/autorização para gravar o arquivo no repositório, devolva o conteúdo pronto para salvar e informe que não foi publicado.
