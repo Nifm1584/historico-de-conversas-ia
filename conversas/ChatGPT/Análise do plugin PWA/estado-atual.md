@@ -58,6 +58,11 @@ Esta regra é de continuidade documental e não autoriza mudanças no código, n
 
 - Foi definido e documentado o arquivamento de cada nova sessão em um arquivo separado dentro de `sessoes/`, com nome `AAAA-MM-DD-assunto-curto.md`.
 - Foi criado `sessoes/README.md` com as regras e `sessoes/2026-10-18-organizacao-do-historico-por-sessoes.md`, que é um resumo estruturado, não uma transcrição integral.
-- As instruções de retomada e os arquivos do modelo foram atualizados na branch `feat/retomada-checkpoint-obrigatorio`.
-- **Não foi alterado o código do TREG PWA, nem o arquivo `historico.md`; não houve merge para `main` nem ação na VPS.**
-- **Ponto de retomada:** revisar a branch e seus arquivos documentais. Não fazer merge em `main` sem aprovação explícita.
+- As instruções de retomada e os arquivos do modelo foram revisados e publicados na branch principal do repositório de arquivo.
+- O PR #1 foi integrado por squash merge à `main`: https://github.com/Nifm1584/historico-de-conversas-ia/pull/1
+- Commit de merge confirmado na `main`: `3c304c8bb1ede58b2eff88793ca43698dda06789`.
+- A sessão `sessoes/Correção documental — Fase 3 do TREG PWA.md` também foi enviada ao repositório; ela registra o material disponível sobre a correção documental da Fase 3. Não presumir que seja uma transcrição integral sem verificar seu conteúdo e sua classificação.
+- `historico.md` original foi preservado. Nenhum código do TREG PWA foi alterado nesta manutenção documental, e nenhuma ação foi feita na VPS.
+- **Estado atual do arquivo de memória:** a organização documental e as instruções de retomada já estão na `main`; não há merge documental pendente daquela branch.
+- **Próxima retomada do projeto TREG PWA:** seguir o procedimento de leitura definido em `INSTRUCAO-PARA-NOVO-AGENTE.md`, ler o histórico original e todas as sessões em ordem cronológica, conferir `estado-atual.md` e verificar branches, commits e relatório 17 no repositório real do projeto antes de recomendar ou executar qualquer etapa.
+- A publicação anterior no arquivo de memória não autoriza mudanças no código do TREG PWA, instalação ou alterações na VPS, nem novos merges/publicações. Continuam valendo as aprovações por fase.
